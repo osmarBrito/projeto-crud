@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/crud.js" defer type="module"></script>
+    <title>Projeto Final CRUD</title>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <figure>
+                <img src="image/Balde_de_pipoca___Vetor_Premium-removebg-preview.png" alt="Balde_de_pipoca.jpeg" title="balde de pipoca">
+            </figure>
+            <div>
+                <ul>
+                    <li><a href="#list-filmes">Lista de Filmes</a></li>  
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <main>
+        <section id="tela-cadastro">
+            <div id="cadastro">
+                <h1>Cadastro de Filmes</h1>
+                    <form id="form">
+                        <label>Titulo</label> 
+                        <input type="text" name="txt_title" id="title" ><br>
+                        <label>Sinopse</label> 
+                        <textarea id="sinopse"></textarea><br>
+                        <label>Imagem</label> 
+                        <input type="text" name="txt_image" id="image" ><br>
+                        <label>Preço</label>
+                        <input type="text" name="txt_price" id="price" ><br>
+                        <div id="salvar"> Salvar </div>
+                    </form>
+            </div>
+        </section> 
+        
+        <section id="tela-lista">
+            <div id="list-filmes">
+                <h1> Listagem de Filmes </h1>
+                <div class="linha">
+                    <div class="titulo">Nome do filme</div>
+                    <div class="titulo">Sinopse</div>
+                    <div class="titulo">Valor</div>
+                    <div class="titulo">Opções</div>
+                </div>
+                <div id="listDados"> 
+                    <!-- <div id="dados" class="linha dados"> 
+                        <div>Title</div>
+                        <div>Subtitle</div>
+                        <div>Price</div>
+                        <div>
+                            <span>
+                                <img src="icones/editar.png">
+                            </span>  
+                            <span>
+                                <img src="icones/excluir.png">
+                            </span>
+                        </div>
+                    </div>               -->
+                </div>    
+        </section>
+    </main>  
+    <footer id="fim">
+        <figure>
+            <img src="image/Balde_de_pipoca___Vetor_Premium-removebg-preview.png" alt="Balde_de_pipoca.jpeg" title="balde de pipoca">
+        </figure>
+
+    </footer>
+</body>
+</html>
